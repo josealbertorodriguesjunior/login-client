@@ -1,6 +1,6 @@
 ## Simple Login Client Using Java SE and Apache HttpComponents
 
-To execute this project is necessary download and run the source code (Rest API) of this repository:
+To execute this project is necessary download and run the Rest API of this repository:
 https://github.com/josealbertorodriguesjunior/login-service
 
 PS: Dont forget of create a database before run the API!
@@ -11,4 +11,4 @@ After execute these steps clone this project using `git clone git@github.com:jos
 
 and navigate to the project folder `cd login-client`. After this run `mvn clean compile assembly:single`
 
-And them run the application using `java -jar target/SimpleLogin-1.0-jar-with-dependencies.jar`
+And then run the application using `java -jar target/SimpleLogin-1.0-jar-with-dependencies.jar`
