@@ -33,6 +33,7 @@ public class Main {
             case 1:
                 System.out.println("Insert your full name: \n");
                 name = input.nextLine();
+                input.nextLine();
                 System.out.println("\nInsert your username: \n");
                 username = input.nextLine();
                 System.out.println("\nInsert your email: \n");

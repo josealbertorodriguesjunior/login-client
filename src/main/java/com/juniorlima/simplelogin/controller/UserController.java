@@ -26,7 +26,7 @@ public class UserController {
         HttpClient httpClient = HttpClientBuilder.create().build();
         StringEntity entity = new StringEntity(gson.toJson(userModel),
                 ContentType.APPLICATION_JSON);
-        HttpPost request = new HttpPost("http://localhost:8080/api/sign-up");
+        HttpPost request = new HttpPost("http://api.envs.subutai.cloud:8080/api/sign-up");
         request.setEntity(entity);
         HttpResponse response = httpClient.execute(request);
         if (response.getStatusLine().getStatusCode() != 200) {
@@ -41,7 +41,7 @@ public class UserController {
         HttpClient httpClient = HttpClientBuilder.create().build();
         StringEntity entity = new StringEntity(gson.toJson(userModel),
                 ContentType.APPLICATION_JSON);
-        HttpPost request = new HttpPost("http://localhost:8080/api/login");
+        HttpPost request = new HttpPost("http://api.envs.subutai.cloud:8080/api/login");
         request.setEntity(entity);
         HttpResponse response = httpClient.execute(request);
         if (response.getStatusLine().getStatusCode() == 200) {
